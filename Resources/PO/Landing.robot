@@ -8,7 +8,7 @@ ${LOGIN_BUTTON} =     login-button
 *** Keywords ***
 
 Navigate To
-        go to    ${URL_LANDING}
+        Go to    ${URL_LANDING}
 
-Verify you are on a correct page
-        wait until page contains element    ${LOGIN_BUTTON}
+Verify You Are On A Correct Page
+        Wait Until Page Contains Element    ${LOGIN_BUTTON}

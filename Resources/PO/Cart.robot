@@ -6,11 +6,11 @@ ${CART} =       class=shopping_cart_link
 
 *** Keywords ***
 
-Navigate to
-        click link          ${CART}
+Navigate To
+        Click Link          ${CART}
 
-Verify you are on a correct page
-        wait until page contains        Your Cart
+Verify You Are On A Correct Page
+        Wait Until Page Contains        Your Cart
 
-Remove one item
-        click button    remove-sauce-labs-backpack
+Remove One Item
+        Click Button    remove-sauce-labs-backpack

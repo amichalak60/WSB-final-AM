@@ -14,53 +14,53 @@ ${SHOPPING_CART} =      class=shopping_cart_badge
 
 *** Keywords ***
 
-Verify you are on a correct page
-        wait until page contains    Products
+Verify You Are On A Correct Page
+        Wait Until Page Contains    Products
 
 Filter "Z-A"
-        wait until element is visible   ${dropdown}
-        select from list by label  ${dropdown}  Name (Z to A)
+        Wait Until Element Is Visible   ${dropdown}
+        Select From List by Label  ${dropdown}  Name (Z to A)
 
 Filter "A-Z"
-        wait until element is visible    ${dropdown}
-        select from list by label  ${dropdown}  Name (A to Z)
+        Wait Until Element Is Visible    ${dropdown}
+        Select From List By Label  ${dropdown}  Name (A to Z)
 
-Filter price "low-high"
+Filter Price "low-high"
         Wait Until Element Is Visible  ${dropdown}
-        select from list by label  ${dropdown}  Price (low to high)
+        Select From List By Label  ${dropdown}  Price (low to high)
 
-Filter price "high-low"
+Filter Price "high-low"
         Wait Until Element Is Visible  ${dropdown}
-        select from list by label  ${dropdown}  Price (high to low)
+        Select From List By Label  ${dropdown}  Price (high to low)
 
-Add one product
-        click button        ${BACKPACK_ADD_TO_CART}
+Add One Product
+        Click Button        ${BACKPACK_ADD_TO_CART}
 
-Verify that cart has 1 item inside
-         element should contain    ${SHOPPING_CART}      1
+Verify That Cart Has 1 Item Inside
+        Element Should Contain    ${SHOPPING_CART}      1
 
-Add six products
-        click button        ${BACKPACK_ADD_TO_CART}
-        click button        ${BIKE_LIGHT_ADD_TO_CART}
-        click button        ${BOLT_T_SHIRT_ADD_TO_CART}
-        click button        ${FLEECE_JACKET_ADD_TO_CART}
-        click button        ${ONESIE_ADD_TO_CART}
-        click button        ${T_SHIRT_ADD_TO_CART}
+Add Six Products
+        Click Button        ${BACKPACK_ADD_TO_CART}
+        Click Button        ${BIKE_LIGHT_ADD_TO_CART}
+        Click Button        ${BOLT_T_SHIRT_ADD_TO_CART}
+        Click Button        ${FLEECE_JACKET_ADD_TO_CART}
+        Click Button        ${ONESIE_ADD_TO_CART}
+        Click Button        ${T_SHIRT_ADD_TO_CART}
 
-Verify that cart has 6 items inside
-         element should contain    ${SHOPPING_CART}      6
+Verify That Cart Has 6 Items Inside
+        Element Should Contain    ${SHOPPING_CART}      6
 
-Click Twitter page
-        click link    Twitter
+Click Twitter Page
+        Click Link    Twitter
 
-Click Facebook page
-        click link    Facebook
+Click Facebook Page
+        Click Link    Facebook
 
-Click Linkedin page
-        click link    LinkedIn
+Click Linkedin Page
+        Click Link    LinkedIn
 
-Click on hamburger menu
-        click button        ${HAMBURGER_MENU}
+Click On Hamburger Menu
+        Click Button        ${HAMBURGER_MENU}
 
-Log out
-        click link    Logout
+Log Out
+        Click Link    Logout

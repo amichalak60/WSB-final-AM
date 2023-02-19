@@ -6,18 +6,18 @@ ${TOTAL_PRICE} =      class=summary_total_label
 
 *** Keywords ***
 
-Navigate to
-        click button    continue
+Navigate To
+        Click Button    continue
 
-Verify you are on a correct page
-        wait until page contains    Checkout: Overview
+Verify You Are On A Correct Page
+        Wait Until Page Contains    Checkout: Overview
 
-Verify that the total price is calculated properly for one product
-        wait until element contains   ${TOTAL_PRICE}    32.39
+Verify That The Total Price Is Calculated Properly For One Product
+        Wait Until Element Contains   ${TOTAL_PRICE}    32.39
 
 
-Verify that the total price is calculated properly for six products
-        wait until element contains    ${TOTAL_PRICE}     140.34
+Verify That The Total Price Is Calculated Properly For Six Products
+        Wait Until Element Contains    ${TOTAL_PRICE}     140.34
 
-Finalize the order
-        click button    Finish
+Finalize The Order
+        Click Button    Finish

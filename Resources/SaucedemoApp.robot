@@ -7,103 +7,101 @@ Resource    ../Resources/PO/Checkout_information.robot
 Resource    ../Resources/PO/Checkout_overview.robot
 Resource    ../Resources/PO/Checkout_finish.robot
 
-
-*** Variables ***
-
 *** Keywords ***
 
-Go to Landing Page
+Go To Landing Page
         Landing.Navigate To
-        Landing.Verify you are on a correct page
+        Landing.Verify You Are On A Correct Page
 
-Sign in with a locked out user
-        Login.Locked out user
+Sign In With A Locked Out User
+        Login.Locked Out User
 
-Sign in with a wrong username
-        Login.Wrong username
+Sign In With A Wrong Username
+        Login.Wrong Username
 
-Sign in with a wrong password
-        Login.Wrong password
+Sign In With A Wrong Password
+        Login.Wrong Password
 
-Sign in with correct credentials
-        Login.Correct credentials
-        Products.Verify you are on a correct page
+Sign In With Correct Credentials
+        Login.Correct Credentials
+        Products.Verify You Are On A Correct Page
 
-Select "Z-A" from drop-down list
-        Products.Verify you are on a correct page
+Select "Z-A" From Drop-down List
+        Products.Verify You Are On A Correct Page
         Products.Filter "Z-A"
 
-Select "A-Z" from drop-down list
-        Products.Verify you are on a correct page
+Select "A-Z" From Drop-down List
+        Products.Verify You Are On A Correct Page
         Products.Filter "A-Z"
 
-Select price "low-high" from drop-down list
-        Products.Verify you are on a correct page
-        Products.Filter price "low-high"
+Select Price "low-high" From Drop-down List
+        Products.Verify You Are On A Correct Page
+        Products.Filter Price "low-high"
 
-Select price "high-low" from drop-down list
-        Products.Verify you are on a correct page
+Select Price "high-low" From Drop-down List
+        Products.Verify You Are On A Correct Page
         Products.Filter price "high-low"
 
-Add one product to cart
-        Products.Verify you are on a correct page
-        Products.Add one product
-        Products.Verify that cart has 1 item inside
+Add One Product To Cart
+        Products.Verify You Are On A Correct Page
+        Products.Add One Product
+        Products.Verify That Cart Has 1 Item Inside
 
-Place an order with one product
-        Products.Verify you are on a correct page
-        Products.Add one product
-        Products.Verify that cart has 1 item inside
-        Cart.Navigate to
-        Cart.Verify you are on a correct page
-        Checkout_information.Navigate to
-        Checkout_information.Verify you are on a correct page
-        Checkout_information.Populate checkout information
-        Checkout_overview.Navigate to
-        Checkout_overview.Verify you are on a correct page
-        Checkout_overview.Verify that the total price is calculated properly for one product
-        Checkout_overview.Finalize the order
-        Checkout_finish.Verify you are on a correct page
+Place An Order With One Product
+        Products.Verify You Are On A Correct Page
+        Products.Add One Product
+        Products.Verify That Cart Has 1 Item Inside
+        Cart.Navigate To
+        Cart.Verify You Are On A Correct Page
+        Checkout_information.Navigate To
+        Checkout_information.Verify You Are On A Correct Page
+        Checkout_information.Populate Checkout Information
+        Checkout_overview.Navigate To
+        Checkout_overview.Verify You Are On A Correct Page
+        Checkout_overview.Verify That The Total Price Is Calculated Properly For One Product
+        Checkout_overview.Finalize The Order
+        Checkout_finish.Verify You Are On A Correct Page
 
-Add six products to cart
-        Products.Verify you are on a correct page
-        Products.Add six products
-        Products.Verify that cart has 6 items inside
+Add Six Products to Cart
+        Products.Verify You Are On A Correct Page
+        Products.Add Six Products
+        Products.Verify That Cart Has 6 Items Inside
 
-Remove one item from cart
-        Products.Verify you are on a correct page
-        Cart.Navigate to
-        Cart.Verify you are on a correct page
-        Cart.Remove one item
+Remove One Item From Cart
+        Products.Verify You Are On A Correct Page
+        Cart.Navigate To
+        Cart.Verify You Are On A Correct Page
+        Cart.Remove One Item
 
-Place an order with six products
-        Products.Verify you are on a correct page
-        Products.Add six products
-        Products.Verify that cart has 6 items inside
-        Cart.Navigate to
-        Cart.Verify you are on a correct page
-        Checkout_information.Navigate to
-        Checkout_information.Verify you are on a correct page
-        Checkout_information.Populate checkout information
-        Checkout_overview.Navigate to
-        Checkout_overview.Verify you are on a correct page
-        Checkout_overview.Verify that the total price is calculated properly for six products
-        Checkout_overview.Finalize the order
-        Checkout_finish.Verify you are on a correct page
+Place An Order With Six Products
+        Products.Verify You Are On A Correct Page
+        Products.Add Six Products
+        Products.Verify That Cart Has 6 Items Inside
+        Cart.Navigate To
+        Cart.Verify You Are On A Correct Page
+        Checkout_information.Navigate To
+        Checkout_information.Verify You Are On A Correct Page
+        Checkout_information.Populate Checkout Information
+        Checkout_overview.Navigate To
+        Checkout_overview.Verify You Are On A Correct Page
+        Checkout_overview.Verify That The Total Price Is Calculated Properly For Six Products
+        Checkout_overview.Finalize The Order
+        Checkout_finish.Verify You Are On A Correct Page
 
-Go to Twitter page
-        Products.Verify you are on a correct page
-        Products.Click Twitter page
+Go To Twitter Page
+        Products.Verify You Are On A Correct Page
+        Products.Click Twitter Page
 
-Go to Facebook page
-        Products.Verify you are on a correct page
-        Products.Click Facebook page
+Go To Facebook Page
+        Products.Verify You Are On A Correct Page
+        Products.Click Facebook Page
 
-Go to Linkedin page
-        Products.Verify you are on a correct page
-        Products.Click Linkedin page
+Go To Linkedin Page
+        Products.Verify You Are On A Correct Page
+        Products.Click Linkedin Page
+
 Log out
-        Products.Verify you are on a correct page
-        Products.Click on hamburger menu
-        Products.Log out
-        Landing.Verify you are on a correct page
+        Products.Verify You Are On A Correct Page
+        Products.Click On Hamburger Menu
+        Products.Log Out
+        Landing.Verify You Are On A Correct Page

@@ -9,29 +9,29 @@ ${CORRECT_PASSWORD} =   secret_sauce
 ${WRONG_PASSWORD} =     secret_sauce2
 ${LOGIN_BUTTON} =       login-button
 ${USERNAME_FIELD} =     id=user-name
-${USERNAME_PASSWORD} =  id=password
+${USERNAME_PASSWORD_FIELD} =  id=password
 
 *** Keywords ***
 
-Locked out user
-    input text    ${USERNAME_FIELD}   ${LOCKED_OUT_USER}
-    input text    ${USERNAME_PASSWORD}     ${CORRECT_PASSWORD}
-    click button    ${LOGIN_BUTTON}
-    wait until page contains    Epic sadface: Sorry, this user has been locked out.
+Locked Out User
+    Input Text    ${USERNAME_FIELD}   ${LOCKED_OUT_USER}
+    Input Text    ${USERNAME_PASSWORD_FIELD}     ${CORRECT_PASSWORD}
+    Click Button    ${LOGIN_BUTTON}
+    Wait Until Page Contains    Epic sadface: Sorry, this user has been locked out.
 
-Wrong username
-    input text    ${USERNAME_FIELD}   ${WRONG_USERNAME}
-    input text    ${USERNAME_PASSWORD}     ${CORRECT_PASSWORD}
-    click button    ${LOGIN_BUTTON}
-    wait until page contains    Epic sadface: Username and password do not match any user in this service
+Wrong Username
+    Input Text    ${USERNAME_FIELD}   ${WRONG_USERNAME}
+    Input Text    ${USERNAME_PASSWORD_FIELD}     ${CORRECT_PASSWORD}
+    Click Button    ${LOGIN_BUTTON}
+    Wait Until Page Contains    Epic sadface: Username and password do not match any user in this service
 
-Wrong password
-    input text    ${USERNAME_FIELD}    ${CORRECT_USERNAME}
-    input text    ${USERNAME_PASSWORD}     ${WRONG_PASSWORD}
-    click button    ${LOGIN_BUTTON}
-    wait until page contains    Epic sadface: Username and password do not match any user in this service
+Wrong Password
+    Input Text    ${USERNAME_FIELD}    ${CORRECT_USERNAME}
+    Input Text    ${USERNAME_PASSWORD_FIELD}     ${WRONG_PASSWORD}
+    Click Button    ${LOGIN_BUTTON}
+    Wait Until Page Contains    Epic sadface: Username and password do not match any user in this service
 
-Correct credentials
-    input text    ${USERNAME_FIELD}   ${CORRECT_USERNAME}
-    input text    ${USERNAME_PASSWORD}     ${CORRECT_PASSWORD}
-    click button    ${LOGIN_BUTTON}
+Correct Credentials
+    Input Text    ${USERNAME_FIELD}   ${CORRECT_USERNAME}
+    Input Text    ${USERNAME_PASSWORD_FIELD}     ${CORRECT_PASSWORD}
+    Click Button    ${LOGIN_BUTTON}

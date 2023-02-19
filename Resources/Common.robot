@@ -7,9 +7,9 @@ ${BROWSER} =        Chrome
 *** Keywords ***
 
 Begin Test
-        set selenium speed  0.5
-        open browser   about:blank  ${BROWSER}
-        maximize browser window
+        Set Selenium Speed  0.5
+        Open Browser   about:blank  ${BROWSER}
+        Maximize Browser Window
 
 End Test
-        close all browsers
+        Close All Browsers

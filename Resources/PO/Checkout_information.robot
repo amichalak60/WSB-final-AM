@@ -5,14 +5,14 @@ Library     SeleniumLibrary
 
 *** Keywords ***
 
-Navigate to
-        click button    Checkout
+Navigate To
+        Click Button    Checkout
 
 Verify you are on a correct page
-        wait until page contains    Checkout: Your Information
+        Wait Until Page Contains    Checkout: Your Information
 
 Populate checkout information
-        wait until page contains    Checkout: Your Information
-        input text    id=first-name     Adam
-        input text    id=last-name      Michalak
-        input text    id=postal-code    190619
+        Wait Until Page Contains    Checkout: Your Information
+        Input Text    id=first-name     Adam
+        Input Text    id=last-name      Michalak
+        Input Text    id=postal-code    190619
